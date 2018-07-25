@@ -1,0 +1,11 @@
+name = "FEM"
+uuid = "b8b830c0-9037-11e8-3299-f517a735725f"
+authors = ["Asdow <20314541+Asdow@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+GLFW = "f7f18e0c-5ee9-5ccd-a5bf-e8befd85ed98"
+GLU = "364390f0-8ff4-11e8-3768-ffcef270d860"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+ModernGL = "66fc600b-dfda-50eb-8b99-91cfa97b1301"
+StaticArrayUtils = "efc909a0-8fe6-11e8-0c75-6984a2bbfd9a"

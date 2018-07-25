@@ -1,0 +1,138 @@
+[[Base64]]
+uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+
+[[BinDeps]]
+deps = ["Compat", "Libdl", "SHA", "URIParser"]
+git-tree-sha1 = "160d5d926e83e0970dd549ad9fe0ac3e8107e83c"
+uuid = "9e28174c-4ba2-5203-b857-d8d62c4213ee"
+version = "0.8.8"
+
+[[Compat]]
+deps = ["Base64", "Dates", "DelimitedFiles", "Distributed", "InteractiveUtils", "LibGit2", "Libdl", "LinearAlgebra", "Markdown", "Mmap", "Pkg", "Printf", "REPL", "Random", "Serialization", "SharedArrays", "Sockets", "SparseArrays", "Statistics", "Test", "UUIDs", "Unicode"]
+git-tree-sha1 = "c478aec93ea90bb99c307a92df17a76131bf275f"
+uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
+version = "1.0.0"
+
+[[Dates]]
+uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
+[[DelimitedFiles]]
+uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+
+[[Distributed]]
+uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+
+[[FileIO]]
+deps = ["InteractiveUtils", "Pkg", "Random", "Test"]
+git-tree-sha1 = "4cfe13dce8564c2d0b96ad4a3a7f99e05fb97d46"
+uuid = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+version = "1.0.0"
+
+[[GLFW]]
+deps = ["BinDeps", "Homebrew", "Libdl"]
+git-tree-sha1 = "36dcea83ec3dbdd2071315c45fd0e900d19079ff"
+uuid = "f7f18e0c-5ee9-5ccd-a5bf-e8befd85ed98"
+version = "2.0.1"
+
+[[GLU]]
+deps = ["FileIO", "GLFW", "ModernGL", "StaticArrayUtils"]
+git-tree-sha1 = "4b7ac4caca4b5181b8ac052d23e78542f535382e"
+repo-rev = "master"
+repo-url = "https://github.com/Asdow/OpenGLUtils"
+uuid = "364390f0-8ff4-11e8-3768-ffcef270d860"
+version = "0.1.0"
+
+[[Homebrew]]
+deps = ["BinDeps", "Compat", "JSON", "Libdl", "Unicode"]
+git-tree-sha1 = "3e6d20b90cab32759f38639e2f085b4e5aa17f21"
+uuid = "d9be37ee-ecc9-5288-90f1-b9ca67657a75"
+version = "0.6.3"
+
+[[InteractiveUtils]]
+uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+
+[[JSON]]
+deps = ["Dates", "Distributed", "Mmap", "Sockets", "Test", "Unicode"]
+git-tree-sha1 = "723a515212612b2175095fa5fa55da0bb4c377e5"
+uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+version = "0.18.0"
+
+[[LibGit2]]
+uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
+
+[[Libdl]]
+uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[[LinearAlgebra]]
+uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[[Markdown]]
+uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+
+[[Mmap]]
+uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[[ModernGL]]
+deps = ["Libdl"]
+git-tree-sha1 = "a0cfb3fafe1e2492d372bc3e15c183a21cbb7ca1"
+uuid = "66fc600b-dfda-50eb-8b99-91cfa97b1301"
+version = "1.1.0"
+
+[[Pkg]]
+uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+
+[[Printf]]
+uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
+[[REPL]]
+uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+
+[[Random]]
+uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[[SHA]]
+uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+
+[[Serialization]]
+uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+
+[[SharedArrays]]
+uuid = "1a1011a3-84de-559e-8e89-a11a2f7dc383"
+
+[[Sockets]]
+uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
+
+[[SparseArrays]]
+uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[[StaticArrayUtils]]
+deps = ["StaticArrays"]
+git-tree-sha1 = "8156aaa163fa05d858fbf0aa63034cd7a6c1a76b"
+repo-rev = "master"
+repo-url = "https://github.com/Asdow/StaticArrayUtils"
+uuid = "efc909a0-8fe6-11e8-0c75-6984a2bbfd9a"
+version = "0.1.0"
+
+[[StaticArrays]]
+deps = ["InteractiveUtils", "LinearAlgebra", "Random", "Statistics", "Test"]
+git-tree-sha1 = "d998a83bc2cd507e12b08203e7523f2e60ac9ee6"
+uuid = "90137ffa-7385-5640-81b9-e52037218182"
+version = "0.8.2"
+
+[[Statistics]]
+uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[[Test]]
+uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[[URIParser]]
+deps = ["Compat", "Unicode"]
+git-tree-sha1 = "0f9c5e2d14e03fbd00696f9394e288bdd5adacbc"
+uuid = "30578b45-9adc-5946-b283-645ec420af67"
+version = "0.3.1"
+
+[[UUIDs]]
+uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+
+[[Unicode]]
+uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
