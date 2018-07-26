@@ -4,6 +4,7 @@ authors = ["Asdow <20314541+Asdow@users.noreply.github.com>"]
 version = "0.1.0"
 
 [deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 GLFW = "f7f18e0c-5ee9-5ccd-a5bf-e8befd85ed98"
 GLU = "364390f0-8ff4-11e8-3768-ffcef270d860"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"

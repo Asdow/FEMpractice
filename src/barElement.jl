@@ -8,7 +8,7 @@ end
 function createElementStiffnessMatrix(coordinatesNodeA, coordinatesNodeB, Ymodulus, Area)
     elementVector = coordinatesNodeB - coordinatesNodeA
 
-    elementLength = norm( elementVector )
+    elementLength = linAlg.norm( elementVector )
     stiffnessMultiplier = ( Ymodulus*Area ) / ( elementLength^3 )
 
 
@@ -65,4 +65,36 @@ function createElementStiffnessMatrix(coordinatesNodeA, coordinatesNodeB, Ymodul
     stiffnessMatrix .*= stiffnessMultiplier
 
     return stiffnessMatrix
+end
+
+
+function createGlobalStiffnessMatrix(elements::barElements{T}, nodes) where {T}
+    Nnodes = length(nodes)
+    globalStiffness = zeros(3Nnodes, 3Nnodes)
+
+
+    for i in 1:length(elements.nodes)
+        id1 = elements.nodes[i][1]
+        id2 = elements.nodes[i][2]
+
+        coordinatesNodeA = nodes[ id1 ]
+        coordinatesNodeB = nodes[ id2 ]
+
+        elementStiffness = createElementStiffnessMatrix(
+            coordinatesNodeA,
+            coordinatesNodeB,
+            elements.Ymoduli[i],
+            elements.Areas[i]
+        )
+
+        rangeA = (3*(id1-1)+1):3id1
+        rangeB = (3*(id2-1)+1):3id2
+        globalStiffness[rangeA, rangeA] += elementStiffness[1:3, 1:3]
+        globalStiffness[rangeA, rangeB] += elementStiffness[1:3, 4:6]
+        globalStiffness[rangeB, rangeA] += elementStiffness[4:6, 1:3]
+        globalStiffness[rangeB, rangeB] += elementStiffness[4:6, 4:6]
+    end
+
+
+    return globalStiffness
 end

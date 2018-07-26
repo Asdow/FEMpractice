@@ -5,7 +5,12 @@ global const linAlg = LinearAlgebra
 
 using StaticArrayUtils
 
+
+
 include("barElement.jl")
+
+export barElements, createElementStiffnessMatrix
+
 
 include("Graphics.jl")
 
